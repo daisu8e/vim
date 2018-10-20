@@ -1,4 +1,4 @@
-*.netrwhist
-
+.vim/.viminfo
+.vim/.netrwhist
 .vim/swp/*
 !.vim/swp/.gitkeep

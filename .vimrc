@@ -58,6 +58,7 @@ set grepprg=grep\ -nh
 set tags+=~/tags
 
 set directory=~/.vim/swp
+set viminfo+=n~/.vim/.viminfo
 
 let g:netrw_liststyle = 3
 "let g:netrw_list_hide = 'CVS,\(^\|\s\s\)\zs\.\S\+'
