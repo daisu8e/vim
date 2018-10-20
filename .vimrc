@@ -60,7 +60,7 @@ set tags+=~/tags
 set directory=~/.vim/swp
 
 let g:netrw_liststyle = 3
-let g:netrw_list_hide = 'CVS,\(^\|\s\s\)\zs\.\S\+'
+"let g:netrw_list_hide = 'CVS,\(^\|\s\s\)\zs\.\S\+'
 
 source ~/.vim/encode_ja.vim
 
