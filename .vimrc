@@ -5,6 +5,7 @@ set history=100
 syntax on
 set t_Co=256
 colorscheme default
+hi Directory ctermfg=darkblue
 hi Comment ctermfg=46
 hi Search ctermfg=236 ctermbg=142
 hi MatchParen ctermfg=236 ctermbg=142
