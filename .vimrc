@@ -36,6 +36,8 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 
+set autochdir
+
 set list
 set listchars=tab:\ \ ,trail:-,nbsp:%,extends:>,precedes:<
 
