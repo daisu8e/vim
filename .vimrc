@@ -36,6 +36,14 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 
+au BufEnter * set scroll=5
+au VimResized * set scroll=5
+set scrolljump=10
+set scrolloff=0
+
+set sidescroll=100
+set sidescrolloff=0
+
 set autochdir
 
 set list
