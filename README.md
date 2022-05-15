@@ -2,52 +2,50 @@
 
 ## Vertical Scroll
 
-- gg
-- G
+```
+gg
+G
 
+H
+M
+L
 
-- H
-- M
-- L
+zt
+zz
+zb
+```
 
+```
+CTRL-F
+CTRL-B
 
-- zt
-- zz
-- zb
+CTRL-D
+CTRL-U
 
-
-- CTRL-F
-- CTRL-B
-
-
-- CTRL-D
-- CTRL-U
-
-
-- CTRL-E
-- CTRL-Y
-
+CTRL-E
+CTRL-Y
+```
 
 ## Horizotal Scroll
 
-- 0
-- ^
-- $
+```
+0
+^
+$
 
+g0
+g^
+gm
+g$
 
-- g0
-- g^
-- gm
-- g$
+zs
+ze
+```
 
+```
+zL
+zH
 
-- zs
-- ze
-
-
-- zL
-- zH
-
-
-- zl
-- zh
+zl
+zh
+```
