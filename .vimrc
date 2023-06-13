@@ -79,3 +79,5 @@ source ~/.vim/encode_ja.vim
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
+
+let g:polyglot_disabled = ['csv']
