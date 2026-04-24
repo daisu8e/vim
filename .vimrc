@@ -4,18 +4,7 @@ set history=100
 
 syntax on
 set t_Co=256
-colorscheme default
-hi Directory ctermfg=darkblue
-hi Comment ctermfg=46
-hi Search ctermfg=236 ctermbg=142
-hi MatchParen ctermfg=236 ctermbg=142
-hi LineNr ctermfg=51
-hi Visual ctermbg=25
-hi Pmenu ctermbg=239
-hi PmenuSel ctermbg=247
-hi Statement NONE
-hi Identifier NONE
-hi Type ctermfg=5
+colorscheme daisu8e
 
 set nocursorline
 "hi CursorLine cterm=none ctermbg=232
