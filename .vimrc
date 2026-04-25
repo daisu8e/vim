@@ -4,18 +4,7 @@ set history=100
 
 syntax on
 set t_Co=256
-colorscheme default
-hi Directory ctermfg=darkblue
-hi Comment ctermfg=46
-hi Search ctermfg=236 ctermbg=142
-hi MatchParen ctermfg=236 ctermbg=142
-hi LineNr ctermfg=51
-hi Visual ctermbg=25
-hi Pmenu ctermbg=239
-hi PmenuSel ctermbg=247
-hi Statement NONE
-hi Identifier NONE
-hi Type ctermfg=5
+colorscheme daisu8e
 
 set nocursorline
 "hi CursorLine cterm=none ctermbg=232
@@ -23,8 +12,9 @@ set nocursorline
 set nocursorcolumn
 "hi CursorColumn ctermbg=232
 
-set laststatus=2
-set ruler
+set laststatus=0
+set statusline=\ %F
+set noruler
 set number
 set nowrap
 set wildmenu
@@ -44,6 +34,9 @@ set scrolloff=0
 set sidescroll=100
 set sidescrolloff=0
 
+set splitbelow
+set splitright
+
 set autochdir
 
 set list
@@ -60,6 +53,34 @@ set nowrapscan
 set hlsearch
 
 set showtabline=2
+set tabline=%!Daisu8eTabLine()
+
+function! Daisu8eTabLabel(n) abort
+  let buflist = tabpagebuflist(a:n)
+  let bufnr = buflist[tabpagewinnr(a:n) - 1]
+  let name = bufname(bufnr)
+
+  if empty(name)
+    return '[No Name]'
+  endif
+
+  return fnamemodify(name, ':t')
+endfunction
+
+function! Daisu8eTabLine() abort
+  let line = ''
+
+  for tabnr in range(1, tabpagenr('$'))
+    let hl = tabnr == tabpagenr() ? '%#TabLineSel#' : '%#TabLine#'
+    let line .= '%' . tabnr . 'T'
+    let line .= hl . ' '
+    let line .= Daisu8eTabLabel(tabnr)
+    let line .= ' '
+  endfor
+
+  let line .= '%#TabLineFill#%T'
+  return line
+endfunction
 
 set ambiwidth=double
 
