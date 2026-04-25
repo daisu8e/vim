@@ -28,9 +28,9 @@ if &background ==# 'light'
   hi MatchParen   term=underline cterm=underline gui=underline ctermfg=234 ctermbg=229 guifg=#171c03 guibg=#e5ff80
   hi StatusLine   term=NONE cterm=NONE gui=NONE ctermfg=190 ctermbg=238 guifg=#d0fe1d guibg=#404040
   hi StatusLineNC term=NONE cterm=NONE gui=NONE ctermfg=240 ctermbg=255 guifg=#666666 guibg=#f5f5f5
-  hi TabLine      term=NONE cterm=NONE gui=NONE ctermfg=190 ctermbg=244 guifg=#d0fe1d guibg=#808080
-  hi TabLineSel   term=NONE cterm=NONE gui=NONE ctermfg=16  ctermbg=NONE guifg=#000000 guibg=NONE
-  hi TabLineFill  term=NONE cterm=NONE gui=NONE ctermfg=NONE ctermbg=238 guifg=NONE guibg=#404040
+  hi TabLine      term=NONE cterm=NONE gui=NONE ctermfg=190 ctermbg=234 guifg=#d0fe1d guibg=#1a1a1a
+  hi TabLineSel   term=NONE cterm=NONE gui=NONE ctermfg=16  ctermbg=190 guifg=#000000 guibg=#d0fe1d
+  hi TabLineFill  term=NONE cterm=NONE gui=NONE ctermfg=NONE ctermbg=234 guifg=NONE guibg=#1a1a1a
   hi Pmenu        term=NONE cterm=NONE gui=NONE ctermfg=235 ctermbg=255 guifg=#262626 guibg=#f5f5f5
   hi PmenuSel     term=bold cterm=bold gui=bold ctermfg=234 ctermbg=190 guifg=#171c03 guibg=#d0fe1d
   hi Directory    term=bold cterm=bold gui=bold ctermfg=235 ctermbg=NONE guifg=#262626 guibg=NONE

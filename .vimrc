@@ -49,6 +49,34 @@ set nowrapscan
 set hlsearch
 
 set showtabline=2
+set tabline=%!Daisu8eTabLine()
+
+function! Daisu8eTabLabel(n) abort
+  let buflist = tabpagebuflist(a:n)
+  let bufnr = buflist[tabpagewinnr(a:n) - 1]
+  let name = bufname(bufnr)
+
+  if empty(name)
+    return '[No Name]'
+  endif
+
+  return fnamemodify(name, ':t')
+endfunction
+
+function! Daisu8eTabLine() abort
+  let line = ''
+
+  for tabnr in range(1, tabpagenr('$'))
+    let hl = tabnr == tabpagenr() ? '%#TabLineSel#' : '%#TabLine#'
+    let line .= '%' . tabnr . 'T'
+    let line .= hl . ' '
+    let line .= Daisu8eTabLabel(tabnr)
+    let line .= ' '
+  endfor
+
+  let line .= '%#TabLineFill#%T'
+  return line
+endfunction
 
 set ambiwidth=double
 
