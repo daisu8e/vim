@@ -12,8 +12,9 @@ set nocursorline
 set nocursorcolumn
 "hi CursorColumn ctermbg=232
 
-set laststatus=2
-set ruler
+set laststatus=0
+set statusline=\ %F
+set noruler
 set number
 set nowrap
 set wildmenu
@@ -32,6 +33,9 @@ set scrolloff=0
 
 set sidescroll=100
 set sidescrolloff=0
+
+set splitbelow
+set splitright
 
 set autochdir
 

@@ -26,8 +26,8 @@ if &background ==# 'light'
   hi Search       term=reverse cterm=NONE gui=NONE ctermfg=234 ctermbg=190 guifg=#171c03 guibg=#d0fe1d
   hi IncSearch    term=bold cterm=bold gui=bold ctermfg=231 ctermbg=64  guifg=#ffffff guibg=#748d0f
   hi MatchParen   term=underline cterm=underline gui=underline ctermfg=234 ctermbg=229 guifg=#171c03 guibg=#e5ff80
-  hi StatusLine   term=NONE cterm=NONE gui=NONE ctermfg=190 ctermbg=238 guifg=#d0fe1d guibg=#404040
-  hi StatusLineNC term=NONE cterm=NONE gui=NONE ctermfg=240 ctermbg=255 guifg=#666666 guibg=#f5f5f5
+  hi StatusLine   term=NONE cterm=NONE gui=NONE ctermfg=190 ctermbg=234 guifg=#d0fe1d guibg=#1a1a1a
+  hi StatusLineNC term=NONE cterm=NONE gui=NONE ctermfg=190 ctermbg=244 guifg=#d0fe1d guibg=#808080
   hi TabLine      term=NONE cterm=NONE gui=NONE ctermfg=190 ctermbg=234 guifg=#d0fe1d guibg=#1a1a1a
   hi TabLineSel   term=NONE cterm=NONE gui=NONE ctermfg=16  ctermbg=190 guifg=#000000 guibg=#d0fe1d
   hi TabLineFill  term=NONE cterm=NONE gui=NONE ctermfg=NONE ctermbg=234 guifg=NONE guibg=#1a1a1a
