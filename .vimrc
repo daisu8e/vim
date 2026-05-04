@@ -59,12 +59,13 @@ function! Daisu8eTabLabel(n) abort
   let buflist = tabpagebuflist(a:n)
   let bufnr = buflist[tabpagewinnr(a:n) - 1]
   let name = bufname(bufnr)
+  let modified = getbufvar(bufnr, '&modified') ? '+' : ''
 
   if empty(name)
-    return '[No Name]'
+    return '[No Name]' . modified
   endif
 
-  return fnamemodify(name, ':t')
+  return fnamemodify(name, ':t') . modified
 endfunction
 
 function! Daisu8eTabLine() abort
