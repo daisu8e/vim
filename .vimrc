@@ -62,10 +62,10 @@ function! Daisu8eTabLabel(n) abort
   let modified = getbufvar(bufnr, '&modified') ? '+' : ''
 
   if empty(name)
-    return '[No Name]' . modified
+    return modified . '[No Name]'
   endif
 
-  return fnamemodify(name, ':t') . modified
+  return modified . fnamemodify(name, ':t')
 endfunction
 
 function! Daisu8eTabLine() abort
